@@ -18,12 +18,36 @@
   
 // }
 
-//capitalize 1st letter of each word 
-const capitalizeWord = (str) => {
-  const wordArr = str.split(' ')
-  const word = wordArr.map(word => word[0].toUpperCase() + word.slice(1).toLowerCase())
-  return word
+// //capitalize 1st letter of each word 
+// const capitalizeWord = (str) => {
+//   const wordArr = str.split(' ')
+//   const word = wordArr.map(word => word[0].toUpperCase() + word.slice(1).toLowerCase())
+//   return word
   
+// }
+// CHALLENGE 5: MAX CHARACTER
+// Return the character that is most common in a string
+// ex. maxCharacter('javascript') == 'a'
+function maxCharacter(str) {
+    //initialize char
+    const charMap = {};
+    let maxNum = 0;
+    let maxChar = '';
+
+    str.split('').forEach(char => {
+        if(charMap[char]) {
+            charMap[char]++
+        }else {
+            charMap[char] = 1; 
+        }
+        
+    })
+    if(charMap[char] > maxNum){
+        maxChar = charMap[char]
+   }
+   return maxChar
+    
 }
 
-console.log(capitalizeWord("I love new years"))
+
+maxCharacter("I love new yearssssssss")
