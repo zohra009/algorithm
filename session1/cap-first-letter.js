@@ -42,9 +42,13 @@ function maxCharacter(str) {
         }
         
     })
-    if(charMap[char] > maxNum){
-        maxChar = charMap[char]
-   }
+    }
+    for(let char in charMap){
+        if(charMap[char] > maxNum){
+        maxNum = charMap[char]
+        maxChar = char;
+     }
+    }
    return maxChar
     
 }
