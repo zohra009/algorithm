@@ -25,6 +25,8 @@
 //   return word
   
 // }
+
+/////////////////////////////////////////////////////////////////////
 // CHALLENGE 5: MAX CHARACTER
 // Return the character that is most common in a string
 // ex. maxCharacter('javascript') == 'a'
@@ -51,9 +53,11 @@ function maxCharacter(str) {
         maxNum = charMap[char];
         maxChar = char;
       }
+    
     }
   
     return maxChar;
+}
 
+console.log(maxCharacter("yearssssssss"))
 
-maxCharacter("I love new yearssssssss")
