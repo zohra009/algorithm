@@ -59,5 +59,5 @@ function maxCharacter(str) {
     return maxChar;
 }
 
-console.log(maxCharacter("yearssssssss"))
+console.log(maxCharacter("yearssssss"))
 
