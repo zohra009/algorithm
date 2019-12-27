@@ -36,6 +36,7 @@ $(document).ready(function() {
     
        
     //   return input === input 
+    //not sure do with a friend 
     }
     let input = "(-4/5)";
     $('.welcome').text(input + ' -> ' + isExpressionValid(input));
